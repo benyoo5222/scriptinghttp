@@ -2,15 +2,15 @@ var getHTML = require('../http-functions.js');// i have to put one more dot to g
 
 var requestOptions = {
   host: 'sytantris.github.io',
-  path: '/http-examples/step6/uppercase.html'
+  path: '/http-examples/step6/lowercase.html'
 };
 
-function printUpperCase (html) {
+function printlowercase (html) {
 
   /* Write your code here! */
-  var result = html.toUpperCase(); //I am using .toUpperCase() to make it uppercase because the data type is string.
+  var result = html.toLowerCase(); //I am using .toLowerCase() to make it uppercase because the data type is string.
   console.log(result);
 
 }
 
-getHTML(requestOptions, printUpperCase);
+getHTML(requestOptions, printlowercase);
